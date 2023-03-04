@@ -1,0 +1,48 @@
+.btn {
+    color: $main-color;
+    background-color: transparent;
+    border: 2px solid $second-color;
+    height: 40px;
+    width: 130px;
+    font-size: 16px;
+    animation: moveInBottom 2s ease 0.5s;
+    animation-fill-mode: backwards;
+    animation-delay: 1s;
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: $second-color;
+        color: $main-color;
+    }
+
+    &-radius {
+        border-radius: 100px;
+    }
+}
+
+article {
+    margin-top: 100px;
+    padding: 0 70px;
+}
+
+.headline {
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: $headings-color;
+
+    &::after {
+        content: "";
+        background-color: $second-color;
+        width: 100px;
+        height: 1px;
+        display:inline-block;
+        margin-bottom: 4px;
+    }
+}
+
+.headline-main {
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: 700;
+}

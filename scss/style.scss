@@ -1,0 +1,10 @@
+@charset 'utf-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=Roboto&display=swap');
+
+@import "abstracts/variables";
+@import "abstracts/mixin";
+@import "abstracts/animations";
+@import "global";
+@import "layout/header";
+@import "layout/about";
