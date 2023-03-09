@@ -171,4 +171,31 @@ header .waves-single-3 use {
 }
 #about .about-btn:hover {
   color: #ffffff;
+}
+#about .row:nth-child(3) {
+  margin-top: 100px;
+}
+#about .nav-tabs {
+  border: none;
+}
+#about .nav-item .nav-link {
+  border: 1px solid #777;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+#about .nav-item .nav-link .link-icon .icon {
+  width: 40px;
+  height: 40px;
+}
+#about .nav-item button {
+  transition: all 0.2s;
+}
+#about .nav-item button.active {
+  background-color: #ef6603;
+  color: #ffffff;
+  border: 1px solid #ef6603;
+}
+#about .nav-item button:not(.active):hover {
+  color: #ef6603;
+  border: 1px solid #999;
 }/*# sourceMappingURL=style.css.map */

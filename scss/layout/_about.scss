@@ -22,4 +22,43 @@
         }
         
     }
+
+    .row:nth-child(3) {
+        margin-top: 100px;
+    }
+
+    .nav-tabs {
+        border: none;
+    }
+
+    .nav-item {
+        
+        
+        .nav-link {
+            border: 1px solid #777;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+
+            .link-icon .icon {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        button {
+            transition: all .2s;
+        }
+
+        button.active {
+            background-color: $second-color;
+            color: $main-color;
+            border: 1px solid $second-color;
+        }
+
+        button:not(.active):hover {
+            color: $second-color;
+            border: 1px solid #999;
+        }
+    }
 }
+
