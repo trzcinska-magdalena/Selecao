@@ -1,3 +1,25 @@
 #about {
-    
+    .about__list {
+        margin-top: 10px;
+
+        .list__item {
+            margin: 5px 0;
+            .icon {
+                width: 18px;
+                height: 18px;
+                stroke: $second-color;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .about-btn {
+        display: block;
+        color: $second-color;
+        
+        &:hover {
+            color: $main-color;
+        }
+        
+    }
 }
