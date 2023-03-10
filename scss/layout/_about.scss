@@ -32,33 +32,43 @@
     }
 
     .nav-item {
-        
-        
         .nav-link {
-            border: 1px solid #777;
+            border: 1px solid #d4d6df;
             border-top-left-radius: 0;
             border-top-right-radius: 0;
+            transition: all .2s;
+            font-size: 18px;
+
+            height: 100px;
+            width: 100%;
+
+            font-weight: 500;
+            
 
             .link-icon .icon {
-                width: 40px;
-                height: 40px;
+                width: 42px;
+                height: 42px;
+            }
+
+            .link-info {
+                margin-left: 10px;
+            }
+
+            &.active {
+                background-color: $second-color;
+                color: $main-color;
+                border: 1px solid $second-color;
+            }
+
+            &:not(.active):hover {
+                color: $second-color;
+                border: 1px solid #e9ecef;
             }
         }
+    }
 
-        button {
-            transition: all .2s;
-        }
-
-        button.active {
-            background-color: $second-color;
-            color: $main-color;
-            border: 1px solid $second-color;
-        }
-
-        button:not(.active):hover {
-            color: $second-color;
-            border: 1px solid #999;
-        }
+    .tab-content {
+        margin-top: 40px;
     }
 }
 
