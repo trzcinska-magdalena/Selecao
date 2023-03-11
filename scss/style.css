@@ -63,6 +63,7 @@ section {
   height: 1px;
   display: inline-block;
   margin-bottom: 5px;
+  margin-left: 5px;
 }
 
 .headline-main {
@@ -234,4 +235,35 @@ header .waves-single-3 use {
   background-color: #ffffff;
   color: #ef6603;
   border: 1px solid #ffffff;
+}
+
+#services .service-item {
+  background-color: #ffffff;
+  box-shadow: 0px 7px 25px 0px rgba(93, 95, 100, 0.211);
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+#services .service-item .icon {
+  position: absolute;
+  width: 75px;
+  height: 74px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -23px;
+}
+#services .service-item h5 {
+  font-weight: 600;
+}
+#services .service-item p {
+  color: #555;
+  margin: 0;
+}
+#services .service-item h5,
+#services .service-item p {
+  margin-left: 50px;
+}
+#services .service-item:hover {
+  transform: translateY(-10px);
 }/*# sourceMappingURL=style.css.map */
