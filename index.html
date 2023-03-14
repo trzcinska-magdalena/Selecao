@@ -14,6 +14,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer">
 
   <link rel="stylesheet" href="scss/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
@@ -81,13 +82,13 @@
   </header>
 
   <article id="about">
-    <div class="row">
+    <div class="row" data-aos="zoom-out-right" data-aos-duration="800">
       <div class="col-12">
         <h5 class="headline">About</h5>
         <h4 class="headline-main">Who we are</h4>
       </div>
     </div>
-    <div class="row content-justify-center">
+    <div class="row content-justify-center" data-aos="fade-up" data-aos-duration="1500">
       <div class="col-12 col-lg-6 p-3">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odio explicabo beatae eum fugit fugiat
         aperiam doloremque est quis porro?
@@ -120,7 +121,7 @@
       </div>
     </div>
     <ul class="nav nav-tabs row" id="myTab" role="tablist">
-      <li class="nav-item col-3" role="presentation">
+      <li class="nav-item col-3" role="presentation" data-aos="zoom-in" data-aos-duration="1000">
         <button class="nav-link active d-flex align-items-center justify-content-center justify-content-xl-start"
           id="one-tab" data-toggle="tab" data-target="#one" type="button" role="tab" aria-controls="one"
           aria-selected="true">
@@ -136,7 +137,7 @@
           </span>
         </button>
       </li>
-      <li class="nav-item col-3" role="presentation">
+      <li class="nav-item col-3" role="presentation" data-aos="zoom-in" data-aos-duration="1500">
         <button class="nav-link d-flex align-items-center justify-content-center justify-content-xl-start" id="two-tab"
           data-toggle="tab" data-target="#two" type="button" role="tab" aria-controls="two" aria-selected="false">
           <div class="link-icon">
@@ -151,7 +152,7 @@
           </div>
         </button>
       </li>
-      <li class="nav-item col-3" role="presentation">
+      <li class="nav-item col-3" role="presentation" data-aos="zoom-in" data-aos-duration="2000">
         <button class="nav-link d-flex align-items-center justify-content-center justify-content-xl-start"
           id="three-tab" data-toggle="tab" data-target="#three" type="button" role="tab" aria-controls="three"
           aria-selected="false">
@@ -167,7 +168,7 @@
           </div>
         </button>
       </li>
-      <li class="nav-item col-3" role="presentation">
+      <li class="nav-item col-3" role="presentation" data-aos="zoom-in" data-aos-duration="2500">
         <button class="nav-link d-flex align-items-center justify-content-center justify-content-xl-start" id="four-tab"
           data-toggle="tab" data-target="#four" type="button" role="tab" aria-controls="four" aria-selected="false">
           <div class="link-icon">
@@ -183,7 +184,7 @@
         </button>
       </li>
     </ul>
-    <div class="tab-content" id="myTabContent">
+    <div class="tab-content" id="myTabContent" data-aos="fade-up" data-aos-duration="3000">
       <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
         <div class="row tab-items d-flex align-items-center">
           <div class="col-12 col-lg-6 order-2 order-lg-1 item-text mb-5 mt-5">
@@ -329,7 +330,7 @@
   </article>
 
   <section id="call">
-    <div class="row pt-5 pb-5 align-items-center text-center text-lg-left">
+    <div class="row pt-5 pb-5 align-items-center text-center text-lg-left" data-aos="zoom-out" data-aos-duration="1000">
       <div class="col-12 col-lg-8">
         <h2>Call To Action</h2>
         <p>Donec a odio rutrum, vulputate nunc ut, consectetur orci. Etiam aliquet, felis vitae finibus pretium, ligula
@@ -343,13 +344,13 @@
   </section>
 
   <article id="services">
-    <div class="row">
+    <div class="row" data-aos="zoom-out-right" data-aos-duration="2000">
       <div class="col-12">
         <h5 class="headline">Services</h5>
         <h4 class="headline-main">what we do offer</h4>
       </div>
     </div>
-    <div class="row mt-4 align-items-center">
+    <div class="row mt-4 align-items-center" data-aos="zoom-out-left" data-aos-duration="3000">
       <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">      
         <div class="service-item">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#372772" class="icon">
@@ -416,6 +417,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
     crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
