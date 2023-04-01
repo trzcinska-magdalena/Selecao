@@ -31,9 +31,15 @@ header {
 
         &-collapse {
             background-color: $background-color;
+
+            width: 100%;
+            position: absolute;
+            left: 0px;
+            top: 60px;
         }
 
         &-nav {
+            padding: 0 20px;
             .nav-item {
                 .nav-link {
                     color: $main-color;
@@ -45,6 +51,12 @@ header {
                     }
                 }
             }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .navbar {
+            padding: 0 20px;
         }
     }
 
@@ -68,6 +80,12 @@ header {
                 animation: moveInBottom 2s ease 0.5s;
                 animation-fill-mode: backwards;
                 animation-delay: 1s;
+            }
+        }
+
+        @media (max-width: 768px) {
+            &-text {
+                width: 90%;
             }
         }
     }

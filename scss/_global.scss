@@ -1,3 +1,8 @@
+body {
+    overflow-x: hidden;
+    font-size: 14px;
+}
+
 .btn {
     color: $main-color;
     background-color: transparent;
@@ -23,13 +28,19 @@ section {
     padding: 0 110px;
 }
 
+@media (max-width: 768px) {
+    article,
+    section {
+        padding: 0 20px;
+    }
+}
 
 
 .headline {
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: 2px;
-    color: $headings-color;
+    color: $topics-color;
 
     &::after {
         content: "";
