@@ -31,11 +31,15 @@ header {
 
         &-collapse {
             background-color: $background-color;
+        }
 
-            width: 100%;
-            position: absolute;
-            left: 0px;
-            top: 60px;
+        @media (max-width: 768px) {
+            &-collapse {
+                width: 100%;
+                position: absolute;
+                left: 0px;
+                top: 60px;
+            }
         }
 
         &-nav {

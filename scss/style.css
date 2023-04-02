@@ -121,10 +121,14 @@ header .navbar-toggler-icon {
 }
 header .navbar-collapse {
   background-color: rgb(44, 46, 61);
-  width: 100%;
-  position: absolute;
-  left: 0px;
-  top: 60px;
+}
+@media (max-width: 768px) {
+  header .navbar-collapse {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 60px;
+  }
 }
 header .navbar-nav {
   padding: 0 20px;
