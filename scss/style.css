@@ -462,37 +462,39 @@ blockquote svg {
   color: #ffffff;
 }
 
-#accordion, .card, .card-header {
-  border: none;
-  border-radius: 0;
-  background-color: #ffffff;
-}
-
-.card {
+#accordion .card {
   border-bottom: 1px solid #dddddd;
 }
-.card-header {
+#accordion .card-header {
   font-size: 18px;
   cursor: pointer;
   transition: all 0.5s;
 }
-.card-header svg {
+#accordion .card-header svg {
   width: 23px;
   height: 23px;
   color: #444444;
 }
-.card-header:has(+ .show) {
+#accordion .card-header:has(+ .show) {
   color: #8a3b02;
 }
-.card-header:has(+ .show) svg {
+#accordion .card-header:has(+ .show) svg {
   transform: rotate(180deg);
 }
-.card-header:not(:has(+ .show)):hover {
+#accordion .card-header:not(:has(+ .show)):hover {
   color: #ef6603;
 }
-.card-body {
+#accordion .card-body {
   padding-top: 0;
   margin-left: 28px;
+}
+
+#accordion,
+.card,
+.card-header {
+  border: none;
+  border-radius: 0;
+  background-color: #ffffff;
 }
 
 footer {
