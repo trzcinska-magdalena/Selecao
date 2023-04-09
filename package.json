@@ -1,0 +1,20 @@
+{
+  "name": "selecao",
+  "version": "1.0.0",
+  "description": "I've tried to recreate the page: https://bootstrapmade.com/selecao-bootstrap-template/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "aos": "^2.3.4",
+    "bootstrap": "^4.6.2",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.6.4",
+    "node-sass": "^8.0.0",
+    "swiper": "^9.2.0"
+  }
+}

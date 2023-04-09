@@ -33,7 +33,7 @@ header {
             background-color: $background-color;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             &-collapse {
                 width: 100%;
                 position: absolute;

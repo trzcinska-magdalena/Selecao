@@ -1,3 +1,7 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/swiper/swiper-bundle.min.css";
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "../node_modules/aos/dist/aos.css";
 @import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=Roboto&display=swap");
 @keyframes moveInTop {
   0% {
@@ -122,7 +126,7 @@ header .navbar-toggler-icon {
 header .navbar-collapse {
   background-color: rgb(44, 46, 61);
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   header .navbar-collapse {
     width: 100%;
     position: absolute;
