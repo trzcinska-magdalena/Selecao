@@ -1,0 +1,22 @@
+html {
+    font-size: 10px;
+
+    @media (max-width: $breakpoint-medium) {
+        font-size: 8px;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    font-size: 1.6rem;
+}
+
+article,
+section {
+    margin-top: 10rem;
+    padding: 0 11rem;
+
+    @media (max-width: $breakpoint-medium) {
+        padding: 0 2rem;
+    }
+}

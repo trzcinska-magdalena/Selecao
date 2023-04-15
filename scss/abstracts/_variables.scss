@@ -1,11 +1,24 @@
-$main-color: #ffffff;
-$second-color: #ef6603;
-$background-color: rgb(44, 46, 61);
+$color-primary: #ef6603;
+$color-background: #2c2e3d;
 
-$headings-color: #444444;
-$topics-color: #aaaaaa;
+$color-white: #fff;
+
+$color-grey-dark: #444;
+$color-grey-light-1: #aaa;
+$color-grey-light-2: #d4d6df;
+
+$color-shadow: rgba(93, 95, 100, 0.211);
 
 
+//$main-color: #ffffff;
+//$second-color: #ef6603;
+//$headings-color: #444444;
+//$topics-color: #aaaaaa;
+//$border-color: #d4d6df;
 
 
-
+$breakpoint-xsmall: 320px;
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
+$breakpoint-extra-large: 1200px;

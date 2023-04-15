@@ -1,0 +1,60 @@
+a.navbar-brand {
+    color: $color-white;
+    font-size: 3.6rem;
+    font-weight: 700;
+
+    &:hover {
+        color: $color-white;
+    }
+}
+
+a.nav-link {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+    color: $color-grey-light-1;
+
+    &::after {
+        content: "";
+        background-color: $color-primary;
+        width: 10rem;
+        height: 0.1rem;
+        display:inline-block;
+        margin-bottom: 0.5rem;
+        margin-left: 0.5rem;
+    }
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: 3.8rem;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+#services p {
+    color: $color-grey-dark;
+    margin: 0;
+}
+
+#about .nav-link {
+    font-size: 1.8rem;
+    font-weight: 500;
+}

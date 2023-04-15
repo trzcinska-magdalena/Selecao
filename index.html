@@ -11,14 +11,19 @@
 
   <title>Selecao</title>
 
-  <link rel="stylesheet" href="scss/style.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/swiper/swiper-bundle.min.js"></script>
   <script src="node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
+
+  <link rel="stylesheet" href="scss/style.css">
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="#">Selecao</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -51,16 +56,15 @@
     </nav>
 
     <div class="banner d-flex align-items-center content-justify-center text-center">
-      <div class="banner-text m-auto">
-        <h2 class="banner-text-heading">Welcome to Selecao</h2>
-        <p class="banner-text-paragraph mt-4">orem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam lorem,
+      <div class="banner__text m-auto">
+        <h2 class="banner__text--heading">Welcome to Selecao</h2>
+        <p class="banner__text--paragraph mt-4">orem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam lorem,
           facilisis vel congue non, sodales sed metus. Fusce pulvinar porta lectus mattis accumsan. Donec laoreet
           tristique risus, a euismod neque rutrum in. Curabitur sed dolor vel purus hendrerit imperdiet.</p>
 
-        <button class="banner-btn btn btn-radius">Read more</button>
+        <button class="btn btn--radius btn--bgtransparent btn--white">Read more</button>
       </div>
     </div>
-
     <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none">
       <defs>
         <path id="path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
@@ -80,8 +84,8 @@
   <article id="about">
     <div class="row" data-aos="zoom-out-right" data-aos-duration="800">
       <div class="col-12">
-        <h5 class="headline">About</h5>
-        <h4 class="headline-main">Who we are</h4>
+        <h3 class="headline__main">About</h3>
+        <h4 class="headline__info">Who we are</h4>
       </div>
     </div>
     <div class="row content-justify-center" data-aos="fade-up" data-aos-duration="1500">
@@ -89,7 +93,7 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odio explicabo beatae eum fugit fugiat
         aperiam doloremque est quis porro?
 
-        <ul class="list">
+        <ul class="list mt-3">
           <li class="list__item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
               stroke-width="1.5" stroke="currentColor" class="icon">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -113,9 +117,10 @@
         aperiam doloremque est quis porro? Asperiores laborum provident labore? Aliquid consectetur praesentium atque
         quas voluptatum.
 
-        <button class="about-btn btn mt-auto">Learn more</button>
+        <button class="btn btn--primary mt-auto">Learn more</button>
       </div>
     </div>
+
     <ul class="nav nav-tabs row" id="myTab" role="tablist">
       <li class="nav-item col-3" role="presentation" data-aos="zoom-in" data-aos-duration="1000">
         <button class="nav-link active d-flex align-items-center justify-content-center justify-content-xl-start"
@@ -180,11 +185,13 @@
         </button>
       </li>
     </ul>
+
+
     <div class="tab-content" id="myTabContent" data-aos="fade-up" data-aos-duration="3000">
       <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
         <div class="row tab-items d-flex align-items-center">
           <div class="col-12 col-lg-6 order-2 order-lg-1 item-text mb-5 mt-5">
-            <h3>Quis dictum dolor bibendum sit amet. Efficitur id sem vitae, laoreet pharetra lacus.</h3>
+            <h5>Quis dictum dolor bibendum sit amet. Efficitur id sem vitae, laoreet pharetra lacus.</h5>
             <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odio explicabo beatae eum fugit
               fugiat aperiam doloremque est quis porro?</i>
 
@@ -220,7 +227,7 @@
       <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="two-tab">
         <div class="row tab-items d-flex align-items-center">
           <div class="col-12 col-lg-6 order-2 order-lg-1 item-text mb-5 mt-5">
-            <h3>Quis dictum dolor bibendum sit amet. Efficitur id sem vitae, laoreet pharetra lacus.</h3>
+            <h5>Quis dictum dolor bibendum sit amet. Efficitur id sem vitae, laoreet pharetra lacus.</h5>
             <p>Proin non pharetra dui. Vivamus dolor lacus, dignissim at diam vitae, sodales commodo tortor. Vestibulum
               sit amet ante sed velit scelerisque congue ac ut dui. Sed vestibulum nibh sed maximus feugiat.</p>
             <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odio explicabo beatae eum fugit
@@ -258,7 +265,7 @@
       <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="three-tab">
         <div class="row tab-items d-flex align-items-center">
           <div class="col-12 col-lg-6 order-2 order-lg-1 item-text mb-5 mt-5">
-            <h3>Quis dictum dolor bibendum sit amet. Efficitur id sem vitae, laoreet pharetra lacus.</h3>
+            <h5>Quis dictum dolor bibendum sit amet. Efficitur id sem vitae, laoreet pharetra lacus.</h5>
             <p>Proin non pharetra dui. Vivamus dolor lacus, dignissim at diam vitae, sodales commodo tortor. Vestibulum
               sit amet ante sed velit scelerisque congue ac ut dui. Sed vestibulum nibh sed maximus feugiat.</p>
 
@@ -292,7 +299,7 @@
       <div class="tab-pane fade" id="four" role="tabpanel" aria-labelledby="four-tab">
         <div class="row tab-items d-flex align-items-center">
           <div class="col-12 col-lg-6 order-2 order-lg-1 item-text mb-5 mt-5">
-            <h3>Quis dictum dolor bibendum sit amet. Efficitur id sem vitae, laoreet pharetra lacus.</h3>
+            <h5>Quis dictum dolor bibendum sit amet. Efficitur id sem vitae, laoreet pharetra lacus.</h5>
             <p>Proin non pharetra dui. Vivamus dolor lacus, dignissim at diam vitae, sodales commodo tortor. Vestibulum
               sit amet ante sed velit scelerisque congue ac ut dui. Sed vestibulum nibh sed maximus feugiat.</p>
             <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odio explicabo beatae eum fugit
@@ -323,10 +330,11 @@
         </div>
       </div>
     </div>
-  </article>
 
+  </article>
+  
   <section id="call">
-    <div class="row pt-5 pb-5 align-items-center text-center text-lg-left" data-aos="zoom-out" data-aos-duration="1000">
+    <div class="row pt-5 pb-5 align-items-center text-center text-lg-left" data-aos="zoom-out-right" data-aos-duration="1000">
       <div class="col-12 col-lg-8">
         <h2>Call To Action</h2>
         <p>Donec a odio rutrum, vulputate nunc ut, consectetur orci. Etiam aliquet, felis vitae finibus pretium, ligula
@@ -334,7 +342,7 @@
           rhoncus ante.</p>
       </div>
       <div class="col-12 col-lg-4 text-lg-right">
-        <button class="btn btn-radius btn-call">Call To Action</button>
+        <button class="btn btn--radius btn--white btn--bgcolor btn--call">Call To Action</button>
       </div>
     </div>
   </section>
@@ -342,13 +350,13 @@
   <article id="services">
     <div class="row" data-aos="zoom-out-right" data-aos-duration="2000">
       <div class="col-12">
-        <h5 class="headline">Services</h5>
-        <h4 class="headline-main">what we do offer</h4>
+        <h3 class="headline__main">Services</h3>
+        <h4 class="headline__info">what we do offer</h4>
       </div>
     </div>
     <div class="row mt-4 align-items-center" data-aos="zoom-out-left" data-aos-duration="3000">
       <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
-        <div class="service-item">
+        <div class="service__item">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#372772"
             class="icon">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -360,7 +368,7 @@
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
-        <div class="service-item">
+        <div class="service__item">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FF6F91"
             class="icon">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -372,7 +380,7 @@
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 mt-5 mt-lg-0">
-        <div class="service-item">
+        <div class="service__item">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC75F"
             class="icon">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -385,7 +393,7 @@
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 mt-5">
-        <div class="service-item">
+        <div class="service__item">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#008F7A"
             class="icon">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -397,7 +405,7 @@
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 mt-5">
-        <div class="service-item">
+        <div class="service__item">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2C73D2"
             class="icon">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -409,7 +417,7 @@
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 mt-5">
-        <div class="service-item">
+        <div class="service__item">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#C34A36"
             class="icon">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -426,8 +434,8 @@
   <article id="portfolio">
     <div class="row" data-aos="zoom-out-right" data-aos-duration="2000">
       <div class="col-12">
-        <h5 class="headline">Portfolio</h5>
-        <h4 class="headline-main">what we've done</h4>
+        <h5 class="headline__main">Portfolio</h5>
+        <h4 class="headline__info">what we've done</h4>
       </div>
     </div>
 
@@ -443,9 +451,9 @@
 
     <div class="row grid" data-aos="fade-up" data-aos-duration="2000">
       <div class="col-12 col-md-6 col-lg-4 item-y grid-item mt-3 work">
-        <div class="portfolio-item">
+        <div class="portfolio__item">
           <img src="photos/portfolio/portfolio-7.jpg" alt="">
-          <div class="portfolio-info d-flex">
+          <div class="item__info d-flex">
             <h5>App</h5>
             <div class="ml-auto">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white"
@@ -462,9 +470,9 @@
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 grid-item mt-3 app">
-        <div class="portfolio-item">
+        <div class="portfolio__item">
           <img src="photos/portfolio/portfolio-9.jpg" alt="">
-          <div class="portfolio-info d-flex">
+          <div class="item__info d-flex">
             <h5>App</h5>
             <div class="ml-auto">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white"
@@ -481,9 +489,9 @@
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 item-y grid-item mt-3 work">
-        <div class="portfolio-item">
+        <div class="portfolio__item">
           <img src="photos/portfolio/portfolio-8.jpg" alt="">
-          <div class="portfolio-info d-flex">
+          <div class="item__info d-flex">
             <h5>App</h5>
             <div class="ml-auto">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white"
@@ -500,9 +508,9 @@
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 grid-item mt-3 app">
-        <div class="portfolio-item">
+        <div class="portfolio__item">
           <img src="photos/portfolio/portfolio-2.jpg" alt="">
-          <div class="portfolio-info d-flex">
+          <div class="item__info d-flex">
             <h5>App</h5>
             <div class="ml-auto">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white"
@@ -519,9 +527,9 @@
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 grid-item mt-3 work">
-        <div class="portfolio-item">
+        <div class="portfolio__item">
           <img src="photos/portfolio/portfolio-5.jpg" alt="">
-          <div class="portfolio-info d-flex">
+          <div class="item__info d-flex">
             <h5>App</h5>
             <div class="ml-auto">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white"
@@ -538,9 +546,9 @@
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 grid-item mt-3 work">
-        <div class="portfolio-item">
+        <div class="portfolio__item">
           <img src="photos/portfolio/portfolio-1.jpg" alt="">
-          <div class="portfolio-info d-flex">
+          <div class="item__info d-flex">
             <h5>App</h5>
             <div class="ml-auto">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white"
@@ -557,9 +565,9 @@
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 grid-item mt-3 work">
-        <div class="portfolio-item">
+        <div class="portfolio__item">
           <img src="photos/portfolio/portfolio-6.jpg" alt="">
-          <div class="portfolio-info d-flex">
+          <div class="item__info d-flex">
             <h5>App</h5>
             <div class="ml-auto">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white"
@@ -576,9 +584,9 @@
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 grid-item mt-3 app">
-        <div class="portfolio-item">
+        <div class="portfolio__item">
           <img src="photos/portfolio/portfolio-3.jpg" alt="">
-          <div class="portfolio-info d-flex">
+          <div class="item__info d-flex">
             <h5>App</h5>
             <div class="ml-auto">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white"
@@ -595,9 +603,9 @@
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 grid-item mt-3 work">
-        <div class="portfolio-item">
+        <div class="portfolio__item">
           <img src="photos/portfolio/portfolio-4.jpg" alt="">
-          <div class="portfolio-info">
+          <div class="item__info">
             <h5>App</h5>
             <div class="text-right">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white"
@@ -616,6 +624,8 @@
     </div>
   </article>
 
+  <!--
+
   <article id="testimonials">
     <div class="row" data-aos="zoom-out-right" data-aos-duration="2000">
       <div class="col-12">
@@ -623,7 +633,9 @@
         <h4 class="headline-main">what they are saying about us</h4>
       </div>
     </div>
+  -->
 
+  <!--
     <div class="justify-content-center mt-4" data-aos="zoom-out-right" data-aos-duration="2000">
       <div class="swiper">
         <div class="swiper-wrapper">
@@ -631,6 +643,7 @@
             <blockquote>
               <svg xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+  <!--
                 <path
                   d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z" />
               </svg>
@@ -639,6 +652,7 @@
               corporis excepturi sint est harum!
               <svg xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+  <!--
                 <path
                   d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z" />
               </svg>
@@ -653,6 +667,7 @@
             <blockquote>
               <svg xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+  <!--
                 <path
                   d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z" />
               </svg>
@@ -661,6 +676,7 @@
               corporis excepturi sint est harum!
               <svg xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+  <!--
                 <path
                   d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z" />
               </svg>
@@ -675,6 +691,7 @@
             <blockquote>
               <svg xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+  <!--
                 <path
                   d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z" />
               </svg>
@@ -683,6 +700,7 @@
               corporis excepturi sint est harum!
               <svg xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+  <!--
                 <path
                   d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z" />
               </svg>
@@ -697,6 +715,7 @@
             <blockquote>
               <svg xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+  <!--
                 <path
                   d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z" />
               </svg>
@@ -705,6 +724,7 @@
               corporis excepturi sint est harum!
               <svg xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+  <!--
                 <path
                   d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z" />
               </svg>
@@ -719,6 +739,7 @@
             <blockquote>
               <svg xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+  <!--
                 <path
                   d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z" />
               </svg>
@@ -727,6 +748,7 @@
               corporis excepturi sint est harum!
               <svg xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+  <!--
                 <path
                   d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z" />
               </svg>
@@ -741,6 +763,7 @@
             <blockquote>
               <svg xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+  <!--
                 <path
                   d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z" />
               </svg>
@@ -749,6 +772,7 @@
               corporis excepturi sint est harum!
               <svg xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+  <!--
                 <path
                   d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z" />
               </svg>
@@ -938,13 +962,15 @@
   </article>
 
   <footer class="mt-5"></footer>
+-->
+
 
   <script src="index.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/aos/dist/aos.js"></script>
   <script>
-  AOS.init();
+    AOS.init();
   </script>
 </body>
 

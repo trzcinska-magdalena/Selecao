@@ -6,23 +6,18 @@
             border: none;
             text-align: center;
 
-            &:hover {
-                color: $second-color;
-                border: none;
-            }
-
+            &:hover,
             &:focus {
-                color: $second-color;
+                color: $color-primary;
                 border: none;
             }
         }
     }
-
     .item-y {
-        height: 500px !important;
+        height: 50rem !important;
     }
 
-    .portfolio-item {
+    .portfolio__item {
         height: 100%;
         width: 100%;
         overflow: hidden;
@@ -34,26 +29,26 @@
             transition: all 0.4s;
         }
 
-        .portfolio-info {
+        .item__info {
             position: absolute;
-            height: 80px;
+            height: 8rem;
             width: 100%;
             background-color: rgba(24, 24, 30, 0.6);
             left: 0;
             bottom: 0;
             opacity: 0;
             transition: all 0.4s;
-            color: $main-color;
-            padding: 10px;
+            color: $color-white;
+            padding: 1rem;
 
             svg {
-                stroke: $main-color;
-                width: 20px;
-                height: 20px;
+                stroke: $color-white;
+                width: 2rem;
+                height: 2rem;
                 cursor: pointer;
 
                 &:hover {
-                    stroke: $second-color;
+                    stroke: $color-primary;
                 }
             }
         }
@@ -62,7 +57,7 @@
             img {
                 transform: scale(1.2);
             }
-            .portfolio-info {
+            .item__info {
                 opacity: 1;
             }
         }
