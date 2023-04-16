@@ -1,0 +1,18 @@
+.swiper {
+    &-slide {
+        background-color: $color-white;
+        box-shadow: 0px 0.7rem 2.5rem 0px $color-shadow;
+        margin-bottom: 4rem;
+      }
+
+    &-pagination-bullet {
+        border: 2px solid $color-primary;
+        background-color: transparent;
+        width: 1.4rem;
+        height: 1.4rem;
+
+        &-active {
+            background-color: $color-primary;
+          }
+      }
+}

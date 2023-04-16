@@ -11,18 +11,19 @@
 
 @import "components/button";
 @import "components/navtabs";
+@import "components/swiper";
+@import "components/accordion";
 
 @import "layout/header";
 @import "layout/navbar";
+@import "layout/footer";
 
 @import "pages/about";
 @import "pages/call";
 @import "pages/services";
 @import "pages/portfolio";
+@import "pages/testimonials";
+@import "pages/pricing";
+@import "pages/faq";
 
-
-//@import "layout/testimonials";
-//@import "layout/pricing";
-//@import "layout/faq";
-//@import "layout/footer";
 
