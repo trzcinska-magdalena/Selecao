@@ -1,0 +1,45 @@
+.portfolio__item {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.4s;
+    }
+
+    .item__info {
+        position: absolute;
+        height: 8rem;
+        width: 100%;
+        background-color: rgba(24, 24, 30, 0.6);
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: all 0.4s;
+        color: $color-white;
+        padding: 1rem;
+
+        svg {
+            stroke: $color-white;
+            width: 2rem;
+            height: 2rem;
+            cursor: pointer;
+
+            &:hover {
+                stroke: $color-primary;
+            }
+        }
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.2);
+        }
+        .item__info {
+            opacity: 1;
+        }
+    }
+}

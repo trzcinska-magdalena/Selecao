@@ -4,7 +4,6 @@
     height: 6rem;
     position: fixed;
     z-index: 999999;
-
     margin: 0;
     padding: 0 11rem;
     @media (max-width: $breakpoint-medium) {
@@ -12,20 +11,19 @@
     }
 
     &-toggler {
-        margin-top: 1rem;
         border: 0;
 
         &-icon {
             color: $color-white;
-            width: 3rem;
-            height: 3rem;
+            width: 5rem;
+            height: 5rem;
         }
     }
 
     &-collapse {
         background-color: $color-background;
 
-        @media (max-width: $breakpoint-large) {
+        @media (max-width: $breakpoint-medium) {
             width: 100%;
             position: absolute;
             left: 0;
@@ -34,12 +32,20 @@
     }
 
     &-nav {
-        padding: 0 2rem;
+        padding: 0;
+        @media (max-width: $breakpoint-medium) {
+            padding: 0 2rem;
+        }
 
         .nav-item {
             .nav-link {
-                font-size: 1.5rem;
+                font-size: 1.8rem;
                 color: $color-white;
+                margin-left: 1rem;
+
+                @media (max-width: $breakpoint-medium) {
+                    margin: 0;
+                }
             }
 
             &:hover {
@@ -47,6 +53,11 @@
                     color: $color-primary;
                 }
             }
+
+            @media (max-width: $breakpoint-medium) {
+                padding: 0.4rem 0;
+            }
         }
+        
     }
 }

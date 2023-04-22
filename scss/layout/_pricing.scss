@@ -1,0 +1,8 @@
+.item--color {
+    border: 1px solid $color-primary;
+
+    .item__title {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+}

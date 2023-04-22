@@ -1,7 +1,23 @@
+/// Font sizes (px):
+/// 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+h1 {
+    font-size: 5.2rem;
+    letter-spacing: 0.6rem;
+}
+
 h2 {
-    font-size: 4rem;
-    margin: 0;
-    padding: 0;
+    font-size: 3.6rem;
+}
+
+p,
+blockquote {
+    font-size: 1.6rem;
+}
+
+p {
+    line-height: 1.6;
 }
 
 h3 {
@@ -15,7 +31,7 @@ h3 {
         background-color: $color-primary;
         width: 10rem;
         height: 0.1rem;
-        display:inline-block;
+        display: inline-block;
         margin-bottom: 0.5rem;
         margin-left: 0.5rem;
     }
@@ -27,17 +43,13 @@ h4 {
     font-weight: 700;
 }
 
-h5 {
+h5, .header-item {
     font-size: 2rem;
 }
 
 h6 {
     font-size: 1.6rem;
     font-weight: 700;
-}
-
-p {
-    font-size: 1.4rem;
 }
 
 #services p {
@@ -68,4 +80,5 @@ a.navbar-brand {
 
 a.nav-link {
     font-size: 1.5rem;
+    padding: 0;
 }

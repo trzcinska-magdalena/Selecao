@@ -38,7 +38,8 @@ html {
 
 body {
   overflow-x: hidden;
-  font-size: 1.6rem;
+  font-size: calc(1rem + 0.8vmin);
+  line-height: 1.5;
 }
 
 article,
@@ -61,10 +62,22 @@ ul li {
   list-style-type: none;
 }
 
+h1 {
+  font-size: 5.2rem;
+  letter-spacing: 0.6rem;
+}
+
 h2 {
-  font-size: 4rem;
-  margin: 0;
-  padding: 0;
+  font-size: 3.6rem;
+}
+
+p,
+blockquote {
+  font-size: 1.6rem;
+}
+
+p {
+  line-height: 1.6;
 }
 
 h3 {
@@ -89,17 +102,13 @@ h4 {
   font-weight: 700;
 }
 
-h5 {
+h5, .header-item {
   font-size: 2rem;
 }
 
 h6 {
   font-size: 1.6rem;
   font-weight: 700;
-}
-
-p {
-  font-size: 1.4rem;
 }
 
 #services p {
@@ -129,13 +138,14 @@ a.navbar-brand:hover {
 
 a.nav-link {
   font-size: 1.5rem;
+  padding: 0;
 }
 
 .btn {
   border: 0.2rem solid #ef6603;
-  height: 4rem;
-  width: 13rem;
-  font-size: 1.6rem;
+  height: 4.5rem;
+  width: 15rem;
+  font-size: 1.8rem;
   transition: all 0.2s;
 }
 .btn:hover {
@@ -216,7 +226,7 @@ a.nav-link {
 
 .swiper-slide {
   background-color: #fff;
-  box-shadow: 0px 0.7rem 2.5rem 0px rgba(93, 95, 100, 0.211);
+  box-shadow: 0px 0.7rem 2.5rem 0px rgba(44, 46, 61, 0.211);
   margin-bottom: 4rem;
 }
 .swiper-pagination-bullet {
@@ -265,60 +275,6 @@ a.nav-link {
   background-color: #fff;
 }
 
-.header {
-  background-color: #2c2e3d;
-  height: calc(100vh - 6rem);
-  color: #fff;
-  width: 100%;
-}
-.header .banner {
-  width: 100%;
-  height: calc(100vh - 6rem - 6rem);
-}
-.header .banner__text {
-  width: 50%;
-}
-@media (max-width: 768px) {
-  .header .banner__text {
-    width: 90%;
-  }
-}
-.header .banner__text--heading {
-  animation: moveInTop 2s ease;
-}
-.header .banner__text--paragraph {
-  animation: moveInBottom 2s ease 0.5s;
-  animation-fill-mode: backwards;
-}
-.header .banner__text .btn {
-  animation: moveInBottom 2s ease 0.5s;
-  animation-fill-mode: backwards;
-  animation-delay: 1s;
-}
-.header .waves {
-  display: block;
-  width: 100%;
-  height: 6rem;
-  position: relative;
-  background-color: #2c2e3d;
-}
-.header .waves-single-1 use {
-  animation: move-wave 10s linear infinite;
-  animation-delay: -2s;
-}
-.header .waves-single-2 use {
-  animation: move-wave 8s linear infinite;
-  animation-delay: -2s;
-}
-.header .waves-single-3 use {
-  animation: move-wave 6s linear infinite;
-  animation-delay: -2s;
-}
-
-path {
-  clip: rect(0, 100%, 100%, 0);
-}
-
 .navbar {
   background-color: #2c2e3d;
   width: 100%;
@@ -334,18 +290,17 @@ path {
   }
 }
 .navbar-toggler {
-  margin-top: 1rem;
   border: 0;
 }
 .navbar-toggler-icon {
   color: #fff;
-  width: 3rem;
-  height: 3rem;
+  width: 5rem;
+  height: 5rem;
 }
 .navbar-collapse {
   background-color: #2c2e3d;
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .navbar-collapse {
     width: 100%;
     position: absolute;
@@ -354,54 +309,44 @@ path {
   }
 }
 .navbar-nav {
-  padding: 0 2rem;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .navbar-nav {
+    padding: 0 2rem;
+  }
 }
 .navbar-nav .nav-item .nav-link {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #fff;
+  margin-left: 1rem;
+}
+@media (max-width: 768px) {
+  .navbar-nav .nav-item .nav-link {
+    margin: 0;
+  }
 }
 .navbar-nav .nav-item:hover .nav-link {
   color: #ef6603;
 }
-
-footer {
-  height: 60px;
-  background-color: #2c2e3d;
+@media (max-width: 768px) {
+  .navbar-nav .nav-item {
+    padding: 0.4rem 0;
+  }
 }
 
-#about .list__item {
-  margin: 0.5rem 0;
-}
-#about .list__item .icon {
-  width: 1.8rem;
-  height: 1.8rem;
-  margin-right: 0.5rem;
-  stroke: #ef6603;
-}
-#about .btn {
-  display: block;
-}
-#about .row:nth-child(3) {
-  margin-top: 10rem;
-}
-
-#call {
-  background-color: #2c2e3d;
-  color: #fff;
-}
-
-#services .service__item {
+.service__item {
   background-color: #fff;
-  box-shadow: 0px 0.7rem 2.5rem 0px rgba(93, 95, 100, 0.211);
+  box-shadow: 0px 0.7rem 2.5rem 0px rgba(44, 46, 61, 0.211);
   padding: 3rem;
   position: relative;
   overflow: hidden;
   transition: all 0.5s;
 }
-#services .service__item:hover {
+.service__item:hover {
   transform: translateY(-10px);
 }
-#services .service__item .icon {
+.service__item .icon {
   width: 7.5rem;
   height: 7.4rem;
   position: absolute;
@@ -409,36 +354,23 @@ footer {
   left: -2.3rem;
   transform: translateY(-50%);
 }
-#services .service__item h5,
-#services .service__item p {
-  margin-left: 50px;
+.service__item h5,
+.service__item p {
+  margin-left: 50px !important;
 }
 
-#portfolio .filter-button-group button.btn-default {
-  background-color: transparent;
-  text-transform: uppercase;
-  border: none;
-  text-align: center;
-}
-#portfolio .filter-button-group button.btn-default:hover, #portfolio .filter-button-group button.btn-default:focus {
-  color: #ef6603;
-  border: none;
-}
-#portfolio .item-y {
-  height: 50rem !important;
-}
-#portfolio .portfolio__item {
+.portfolio__item {
   height: 100%;
   width: 100%;
   overflow: hidden;
   position: relative;
 }
-#portfolio .portfolio__item img {
+.portfolio__item img {
   width: 100%;
   height: 100%;
   transition: all 0.4s;
 }
-#portfolio .portfolio__item .item__info {
+.portfolio__item .item__info {
   position: absolute;
   height: 8rem;
   width: 100%;
@@ -450,46 +382,27 @@ footer {
   color: #fff;
   padding: 1rem;
 }
-#portfolio .portfolio__item .item__info svg {
+.portfolio__item .item__info svg {
   stroke: #fff;
   width: 2rem;
   height: 2rem;
   cursor: pointer;
 }
-#portfolio .portfolio__item .item__info svg:hover {
+.portfolio__item .item__info svg:hover {
   stroke: #ef6603;
 }
-#portfolio .portfolio__item:hover img {
+.portfolio__item:hover img {
   transform: scale(1.2);
 }
-#portfolio .portfolio__item:hover .item__info {
+.portfolio__item:hover .item__info {
   opacity: 1;
-}
-
-#testimonials blockquote svg {
-  width: 30px;
-  height: 30px;
-  fill: #ef6603;
-}
-#testimonials .slide__photo {
-  width: 10rem;
-  height: 10rem;
-  margin: 0 auto;
-}
-#testimonials .slide__photo img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
-#testimonials .slide__photo p {
-  margin: 0 !important;
 }
 
 .price__item {
   background-color: #fff;
-  box-shadow: 0px 7px 2.5rem 0px rgba(93, 95, 100, 0.211);
+  box-shadow: 0px 7px 2.5rem 0px rgba(44, 46, 61, 0.211);
   text-align: center;
-  border: 1px solid rgba(93, 95, 100, 0.211);
+  border: 1px solid rgba(44, 46, 61, 0.211);
   position: relative;
   overflow: hidden;
 }
@@ -539,6 +452,115 @@ footer {
 }
 .price__item .item__footer .btn:hover {
   background-color: #fc8129;
+}
+
+.header {
+  background-color: #2c2e3d;
+  height: calc(100vh - 6rem);
+  color: #fff;
+  width: 100%;
+}
+.header .banner {
+  width: 100%;
+  height: calc(100vh - 6rem - 6rem);
+}
+.header .banner__text {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .header .banner__text {
+    width: 90%;
+  }
+}
+.header .banner__text--main {
+  animation: moveInTop 2s ease;
+}
+.header .banner__text--paragraph {
+  animation: moveInBottom 2s ease 0.5s;
+  animation-fill-mode: backwards;
+}
+.header .banner__text .btn {
+  animation: moveInBottom 2s ease 0.5s;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
+}
+.header .waves {
+  display: block;
+  width: 100%;
+  height: 6rem;
+  position: relative;
+  background-color: #2c2e3d;
+}
+.header .waves-single-1 use {
+  animation: move-wave 10s linear infinite;
+  animation-delay: -2s;
+}
+.header .waves-single-2 use {
+  animation: move-wave 8s linear infinite;
+  animation-delay: -2s;
+}
+.header .waves-single-3 use {
+  animation: move-wave 6s linear infinite;
+  animation-delay: -2s;
+}
+
+footer {
+  height: 60px;
+  background-color: #2c2e3d;
+}
+
+#about .list__item {
+  margin: 0.5rem 0;
+}
+#about .list__item .icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: 0.5rem;
+  stroke: #ef6603;
+}
+#about .btn {
+  display: block;
+}
+#about .row:nth-child(3) {
+  margin-top: 10rem;
+}
+
+#call {
+  background-color: #2c2e3d;
+  color: #fff;
+}
+
+#portfolio .filter-button-group button.btn-default {
+  background-color: transparent;
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
+}
+#portfolio .filter-button-group button.btn-default:hover, #portfolio .filter-button-group button.btn-default:focus {
+  color: #ef6603;
+  border: none;
+}
+#portfolio .item-y {
+  height: 50rem !important;
+}
+
+#testimonials blockquote svg {
+  width: 2rem;
+  height: 2rem;
+  fill: #ef6603;
+}
+#testimonials .slide__photo {
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto;
+}
+#testimonials .slide__photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#testimonials .slide__photo p {
+  margin: 0 !important;
 }
 
 .item--color {

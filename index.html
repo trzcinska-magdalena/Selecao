@@ -24,17 +24,17 @@
 
 <body>
   <header class="header">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-md align-items-end">
       <a class="navbar-brand" href="#">Selecao</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
         </span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse mb-3" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="#">Home</a>
@@ -57,12 +57,13 @@
 
     <div class="banner d-flex align-items-center content-justify-center text-center">
       <div class="banner__text m-auto">
-        <h2 class="banner__text--heading">Welcome to Selecao</h2>
-        <p class="banner__text--paragraph mt-4">orem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam lorem,
-          facilisis vel congue non, sodales sed metus. Fusce pulvinar porta lectus mattis accumsan. Donec laoreet
-          tristique risus, a euismod neque rutrum in. Curabitur sed dolor vel purus hendrerit imperdiet.</p>
+        <h1 class="banner__text--main">Welcome to Selecao</h1>
+        <p class="banner__text--paragraph mt-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam lorem, facilisis vel congue non, sodales
+          sed metus. Fusce pulvinar porta lectus mattis accumsan. Donec laoreet tristique risus, a euismod neque rutrum
+          in. Curabitur sed dolor vel purus hendrerit imperdiet.</p>
 
-        <button class="btn btn--radius btn--bgtransparent btn--white">Read more</button>
+        <button class="btn btn--radius btn--bgtransparent btn--white mt-4">Read more</button>
       </div>
     </div>
     <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none">
@@ -81,7 +82,7 @@
     </svg>
   </header>
 
-  <article id="about">
+  <section id="about">
     <div class="row" data-aos="zoom-out-right" data-aos-duration="800">
       <div class="col-12">
         <h3 class="headline__main">About</h3>
@@ -89,7 +90,7 @@
       </div>
     </div>
     <div class="row content-justify-center" data-aos="fade-up" data-aos-duration="1500">
-      <div class="col-12 col-lg-6 p-3">
+      <div class="col-12 col-lg-6 p-3 ml-3 ml-md-0">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odio explicabo beatae eum fugit fugiat
         aperiam doloremque est quis porro?
 
@@ -112,7 +113,7 @@
         </ul>
       </div>
 
-      <div class="col-12 col-lg-6 p-3 d-flex flex-column">
+      <div class="col-12 col-lg-6 p-3 d-flex flex-column ml-3 ml-md-0">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odio explicabo beatae eum fugit fugiat
         aperiam doloremque est quis porro? Asperiores laborum provident labore? Aliquid consectetur praesentium atque
         quas voluptatum.
@@ -185,7 +186,6 @@
         </button>
       </li>
     </ul>
-
 
     <div class="tab-content" id="myTabContent" data-aos="fade-up" data-aos-duration="3000">
       <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
@@ -331,8 +331,8 @@
       </div>
     </div>
 
-  </article>
-  
+  </section>
+
   <section id="call">
     <div class="row pt-5 pb-5 align-items-center text-center text-lg-left" data-aos="zoom-out-right" data-aos-duration="1000">
       <div class="col-12 col-lg-8">
@@ -347,7 +347,7 @@
     </div>
   </section>
 
-  <article id="services">
+  <section id="services">
     <div class="row" data-aos="zoom-out-right" data-aos-duration="2000">
       <div class="col-12">
         <h3 class="headline__main">Services</h3>
@@ -429,9 +429,9 @@
         </div>
       </div>
     </div>
-  </article>
+  </section>
 
-  <article id="portfolio">
+  <section id="portfolio">
     <div class="row" data-aos="zoom-out-right" data-aos-duration="2000">
       <div class="col-12">
         <h3 class="headline__main">Portfolio</h3>
@@ -622,9 +622,9 @@
         </div>
       </div>
     </div>
-  </article>
+  </section>
 
-  <article id="testimonials">
+  <section id="testimonials">
     <div class="row" data-aos="zoom-out-right" data-aos-duration="2000">
       <div class="col-12">
         <h3 class="headline__main">Testimonials</h3>
@@ -770,9 +770,9 @@
         <div class="swiper-pagination"></div>
       </div>
     </div>
-  </article>
+  </section>
 
-  <article id="pricing">
+  <section id="pricing">
     <div class="row" data-aos="zoom-out-right" data-aos-duration="2000">
       <div class="col-12">
         <h3 class="headline__main">Pricing</h3>
@@ -878,9 +878,9 @@
         </div>
       </div>
     </div>
-  </article>
+  </section>
 
-  <article id="faq">
+  <section id="faq">
     <div class="row" data-aos="zoom-out-right" data-aos-duration="2000">
       <div class="col-12">
         <h3 class="headline__main">F.A.Q</h3>
@@ -941,7 +941,7 @@
         </div>
       </div>
     </div>
-  </article>
+  </section>
 
   <footer class="mt-5"></footer>
 

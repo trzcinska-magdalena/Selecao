@@ -14,7 +14,7 @@
                 width: 90%;
             }
 
-            &--heading {
+            &--main {
                 animation: moveInTop 2s ease;
             }
 
@@ -30,8 +30,6 @@
             }
         }
     }
-
-
 
     .waves {
         display: block;
@@ -53,9 +51,4 @@
             animation-delay: -2s;
         }
     }
-    
-}
-
-path {
-    clip: rect(0,100%,100%, 0);
 }

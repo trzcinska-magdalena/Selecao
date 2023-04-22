@@ -13,17 +13,19 @@
 @import "components/navtabs";
 @import "components/swiper";
 @import "components/accordion";
+@import "components/navbar";
+@import "components/service__item";
+@import "components/portfolio__item";
+@import "components/price__item";
 
 @import "layout/header";
-@import "layout/navbar";
 @import "layout/footer";
 
-@import "pages/about";
-@import "pages/call";
-@import "pages/services";
-@import "pages/portfolio";
-@import "pages/testimonials";
-@import "pages/pricing";
-@import "pages/faq";
+@import "layout/about";
+@import "layout/call";
+@import "layout/portfolio";
+@import "layout/testimonials";
+@import "layout/pricing";
+@import "layout/faq";
 
 
